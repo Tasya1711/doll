@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta
+    http-equiv="Content-Security-Policy"
+    content="default-src 'self'; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; font-src https://fonts.gstatic.com;"
+  >
+  <meta
+    http-equiv="X-Content-Security-Policy"
+    content="default-src 'self'; script-src 'self'"
+  />
+  <link rel="stylesheet" href="css/style.css">
+  <title>Homepage💕</title>
+</head>
+<body>
+  <section id="section__clouds">
+    <div class="clouds">
+      <img id="cloud__first" src="img/Cloud.png" alt="cloud__big">
+      <img id="cloud__second" src="img/Cloud.png" alt="cloud__big">
+      <img id="cloud__third" src="img/Cloud.png" alt="cloud__big">
+      <img id="cloud__fourth" src="img/Cloud.png" alt="cloud__big">
+    </div>
+  </section>
+
+  <section id="section__button-next-forward">
+    <button id="button__next">
+      <img src="img/Button__right.png" alt="Button next">
+    </button>
+  </section>
+
+  <section id="section__enter">
+    <div class="box">
+      <img id="box__box" src="img/box__home.png" alt="Box">
+      <img id="box__rabbit" src="img/rabbit.png" alt="Rabbit">
+      <div class="box__inside">
+        <h4>In this game, you will choose<br>
+          the style of your doll</h4>
+        <p>But first, let's choose a name</p>
+        <div class="box__inputs">
+          <input id="name" type="text" placeholder="Name" />
+          <input id="submit" type="submit" value="OK" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="renderer.js"></script>
+</body>
+</html>

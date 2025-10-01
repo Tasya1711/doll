@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+:root {
+  --background-color: #FFAFCC;
+  --text-color: #212121;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Press Start 2P", system-ui;
+}
+
+body {
+  background: var(--background-color);
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* #region Clouds */
+
+#cloud__first {
+  position: absolute;
+  top: -30px;
+  right: -65px;
+  width: 300px;
+  height: 267px;
+  animation: moveClouds 2s ease-in-out infinite;
+  z-index: -1;
+}
+
+@keyframes moveClouds {
+  0% {
+    top: -30px;
+    height: 267px;
+    transform: translateY(0);
+  }
+  50% {
+    top: 10px;
+    height: 247px;
+    transform: translateY(-20px);
+  }
+  100% {
+    top: -30px;
+    height: 267px;
+    transform: translateY(0);
+  }
+}
+
+#cloud__second {
+  position: absolute;
+  top: 100px;
+  left: 40px;
+  width: 300px;
+  height: 267px;
+  animation: moveCloudsSecond 2s ease-in-out infinite;
+  z-index: -1;
+}
+
+@keyframes moveCloudsSecond {
+  0% {
+    top: 100px;
+    height: 267px;
+    transform: translateY(0);
+  }
+  50% {
+    top: 140px;
+    height: 247px;
+    transform: translateY(-20px);
+  }
+  100% {
+    top: 100px;
+    height: 267px;
+    transform: translateY(0);
+  }
+}
+
+#cloud__third {
+  position: absolute;
+  top: 350px;
+  right: -100px;
+  width: 300px;
+  height: 267px;
+  animation: moveCloudsThird 2s ease-in-out infinite;
+  z-index: -1;
+}
+
+@keyframes moveCloudsThird {
+  0% {
+    top: 350px;
+    height: 267px;
+    transform: translateY(0);
+  }
+  50% {
+    top: 390px;
+    height: 247px;
+    transform: translateY(-20px);
+  }
+  100% {
+    top: 350px;
+    height: 267px;
+    transform: translateY(0);
+  }
+}
+
+#cloud__fourth {
+  position: absolute;
+  top: 475px;
+  left: -90px;
+  width: 300px;
+  height: 267px;
+  animation: moveCloudsFourth 2s ease-in-out infinite;
+  z-index: -1;
+}
+
+@keyframes moveCloudsFourth {
+  0% {
+    top: 475px;
+    height: 267px;
+    transform: translateY(0);
+  }
+  50% {
+    top: 515px;
+    height: 247px;
+    transform: translateY(-20px);
+  }
+  100% {
+    top: 475px;
+    height: 267px;
+    transform: translateY(0);
+  }
+}
+/* #endregion */
+
+/* #region Button */
+#button__forward {
+  position: absolute;
+  top: 27px;
+  left: 37px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+#button__forward:hover {
+  transform: scale(1.1);
+}
+
+#button__next {
+  position: absolute;
+  top: 27px;
+  left: 111px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+#button__next:hover {
+  transform: scale(1.1);
+}
+/* #endregion */
+
+/* #region Girl */
+.girl-name {
+  position: relative;
+  left: 85px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+#Girl {
+  position: absolute;
+  top: 78px;
+  left: 220px;
+}
+/* #endregion */
+
+/* #region Skin Color */
+#skincolor {
+  position: absolute;
+  top: 439px;
+  left: 190px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#skincolor h1 {
+  font-size: 24px;
+  color: var(--text-color);
+}
+
+.colors img {
+  width: 95px;
+  height: 90px;
+  transition: transform 0.2s;
+}
+
+.colors img:hover {
+  transform: scale(1.1);
+}
+/* #endregion */
