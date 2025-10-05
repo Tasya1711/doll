@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    const music = new Audio('./music/1688661144_2yxa_ru_newjeans_-_new_jeans_audio__b82pot1ggjq_292857.mp3');
+          music.loop = true;
+          music.volume = 0.5;
+          music.play().catch(e => console.log("Cannot autoplay:", e));
+          globalThis._bgMusic = music;
+  </script>
+</body>
+</html>
